@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Generate PDF</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Generate PDF with Bootstrap Table</h1>
+        <form action="/generate_pdf" method="post">
+            <div class="form-group">
+                <label for="textarea1">Header Table</label>
+                <textarea class="form-control" id="textarea1" name="textarea1" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="textarea2">Table Content</label>
+                <textarea class="form-control" id="textarea2" name="textarea2" rows="8"></textarea>
+            </div>
+            <!-- Add any form fields you need here -->
+            <button type="submit" class="btn btn-primary">Generate PDF</button>
+        </form>
+    </div>
+</body>
+</html>

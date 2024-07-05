@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>PDF Table</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-2">
+        <!-- First Table -->
+        <div id="table1">
+            {{ table1 | safe }}
+        </div>
+
+        <!-- Second Table -->
+        <div id="table2" class="mt-1">
+            {{ table2 | safe }}
+        </div>
+</body>
+</html>
